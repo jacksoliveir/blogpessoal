@@ -20,7 +20,7 @@ public class UsuarioRepositoryTest {
     void start(){
         usuarioRepository.deleteAll();
 
-        usuarioRepository.save( new Usuario(0L,"Luiz da Silva", "lusilva@email.com", "12345678","https://image.jpg"));
+        usuarioRepository.save( new Usuario(0L,"Luiz Silva", "lusilva@email.com", "12345678","https://image.jpg"));
         usuarioRepository.save( new Usuario(0L,"Geandro Silva", "geo@email.com", "12345678","https://image.jpg"));
         usuarioRepository.save( new Usuario(0L,"Jacque Silva", "jacque@email.com", "12345678","https://image.jpg"));
         usuarioRepository.save( new Usuario(0L,"Antonio Cunha", "antc@email.com", "12345678","https://image.jpg"));
