@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.generation.blogpessoal.repository.UsuarioRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 2.256 s <<< FAILURE! - in com.generation.blogpessoal.repository.UsuarioRepositoryTest
+deveRetornarUmUsuario  Time elapsed: 0.091 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.generation.blogpessoal.repository.UsuarioRepositoryTest.deveRetornarUmUsuario(UsuarioRepositoryTest.java:33)
+
+deveRetornarTresUsuarios  Time elapsed: 0.013 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.generation.blogpessoal.repository.UsuarioRepositoryTest.deveRetornarTresUsuarios(UsuarioRepositoryTest.java:41)
+

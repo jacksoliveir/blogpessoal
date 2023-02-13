@@ -1,0 +1,16 @@
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/BlogpessoalApplication.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/repository/UsuarioRepository.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/model/Usuario.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/model/UsuarioLogin.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/security/UserDetailsImpl.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/controller/TesteController.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/model/Postagem.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/model/Tema.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/repository/TemaRepository.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/service/UsuarioService.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/controller/TemaController.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/security/UserDetailsServiceImpl.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/controller/PostagemController.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/repository/PostagemRepository.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/security/BasicSecurityConfig.java
+/Users/jacksoliveir/Development/blogpessoal/src/main/java/com/generation/blogpessoal/controller/UsuarioController.java

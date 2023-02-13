@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.generation.blogpessoal.controller.UsuarioControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.857 s <<< FAILURE! - in com.generation.blogpessoal.controller.UsuarioControllerTest
+deveMostrarTodosUsuarios  Time elapsed: 0.325 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200 OK> but was: <401 UNAUTHORIZED>
+	at com.generation.blogpessoal.controller.UsuarioControllerTest.deveMostrarTodosUsuarios(UsuarioControllerTest.java:86)
+
+deveAtualizaUmUsuario  Time elapsed: 0.157 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200 OK> but was: <401 UNAUTHORIZED>
+	at com.generation.blogpessoal.controller.UsuarioControllerTest.deveAtualizaUmUsuario(UsuarioControllerTest.java:72)
+
