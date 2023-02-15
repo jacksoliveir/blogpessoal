@@ -1,5 +1,3 @@
-#FROM openjdk:17.0.1-jdk-oracle as build
-#FROM openjdk:17-alpine AS builder
 FROM openjdk:17.1.1-jdk-oracle as build
 
 WORKDIR /workspace/app
@@ -15,10 +13,7 @@ RUN ./mvnw install -DskipTests
 
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
-#FROM openjdk:17.0.1-jdk-oracle
 FROM openjdk:17.1.1-jdk-oracle
-
-#FROM openjdk:17-alpine
 
 VOLUME /tmp
 
