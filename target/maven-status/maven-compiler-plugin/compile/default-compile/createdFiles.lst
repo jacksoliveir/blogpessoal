@@ -10,6 +10,7 @@ com/generation/blogpessoal/repository/TemaRepository.class
 com/generation/blogpessoal/security/UserDetailsServiceImpl.class
 com/generation/blogpessoal/controller/UsuarioController.class
 com/generation/blogpessoal/BlogpessoalApplication.class
+com/generation/blogpessoal/configuration/SwaggerConfig.class
 com/generation/blogpessoal/security/BasicSecurityConfig.class
 com/generation/blogpessoal/controller/PostagemController.class
 com/generation/blogpessoal/repository/PostagemRepository.class

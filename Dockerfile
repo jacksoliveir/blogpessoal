@@ -1,17 +1,19 @@
-FROM maven:3.8.7-eclipse-temurin-19 as build
+FROM maven:3.8.7-eclipse-temurin-19 AS build
 
 WORKDIR /workspace/app
 
 COPY mvnw .
+COPY .mvn .mvn
 COPY pom.xml .
 COPY src src
 
 RUN chmod -R 777 ./mvnw
 
+RUN ./mvnw install -DskipTests
 
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
-FROM maven:3.8.7-eclipse-temurin-19
+FROM  maven:3.8.7-eclipse-temurin-19
 
 VOLUME /tmp
 
