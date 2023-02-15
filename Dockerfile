@@ -1,4 +1,4 @@
-FROM openjdk:17.0.1-jdk-oracle AS build
+FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /workspace/app
 
@@ -7,16 +7,11 @@ COPY .mvn .mvn
 COPY pom.xml .
 COPY src src
 
-#RUN chmod -R 777 ./mvnw
-RUN chmod +x mvnw
+RUN chmod -R 777 ./mvnw
 
-#RUN ./mvnw clean package
-#RUN ./mvnw install -DskipTests
-RUN ./mvnw clean package
 RUN ./mvnw install -DskipTests
 
-
-#RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
+RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
 FROM openjdk:17.0.1-jdk-oracle
 
@@ -29,5 +24,3 @@ COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
 COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
 
 ENTRYPOINT ["java","-cp","app:app/lib/*","com.generation.blogpessoal.BlogpessoalApplication"]
-
-
