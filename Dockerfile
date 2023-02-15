@@ -1,4 +1,4 @@
-FROM openjdk:19.0.1-jdk-oracle as build
+FROM maven:3.8.7-eclipse-temurin-19 as build
 
 WORKDIR /workspace/app
 
@@ -13,7 +13,7 @@ RUN ./mvnw install -DskipTests
 
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
-FROM openjdk:19.0.1-jdk-oracle
+FROM maven:3.8.7-eclipse-temurin-19
 
 VOLUME /tmp
 
