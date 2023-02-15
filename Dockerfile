@@ -20,9 +20,6 @@ RUN ./mvnw install -DskipTests
 
 FROM openjdk:17.0.1-jdk-oracle
 
-COPY --from=builder target/*.jar /workspace/app.jar
-
-
 VOLUME /tmp
 
 ARG DEPENDENCY=/workspace/app/target/dependency
