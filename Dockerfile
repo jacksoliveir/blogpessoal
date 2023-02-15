@@ -1,6 +1,6 @@
 FROM openjdk:17.0.1-jdk-oracle AS build
 
-#WORKDIR /workspace/app
+WORKDIR /workspace/app
 
 COPY mvnw .
 COPY .mvn .mvn
@@ -16,9 +16,12 @@ RUN ./mvnw clean package
 RUN ./mvnw install -DskipTests
 
 
-RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
+#RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
 FROM openjdk:17.0.1-jdk-oracle
+
+COPY --from=builder target/*.jar /workspace/app.jar
+
 
 VOLUME /tmp
 
