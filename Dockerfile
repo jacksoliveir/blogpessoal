@@ -1,13 +1,14 @@
 FROM openjdk:17.0.1-jdk-oracle AS build
 
-WORKDIR /workspace/app
-
 COPY mvnw .
 COPY .mvn .mvn
 COPY pom.xml .
-COPY src src
+
+WORKDIR /workspace/app
 
 RUN chmod -R 777 ./mvnw
+
+COPY src src
 
 RUN ./mvnw install -DskipTests
 
