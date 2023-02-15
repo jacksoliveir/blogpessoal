@@ -1,4 +1,6 @@
-FROM maven:3.8.7-eclipse-temurin-17
+FROM openjdk:17.0.1-jdk-oracle AS builder
+#FROM maven:3.8.7-eclipse-temurin-17 AS build
+
 WORKDIR /workspace/app
 
 COPY mvnw .
